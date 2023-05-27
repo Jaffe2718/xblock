@@ -1,6 +1,6 @@
 import random
 '''
-用于生成和操作数据结构的单向图
+graph.py 用于生成和操作数据结构的单向图
 '''
 
 def gen_rule(n: int) -> dict:

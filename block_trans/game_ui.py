@@ -1,3 +1,4 @@
+# game_ui.py
 from typing import Union
 
 import pygame
@@ -39,7 +40,7 @@ def ui_main(screen: pygame.Surface):
         screen.blit(text_surface, text_rect)
 
 
-def _draw_menu(screen: pygame.Surface, tick:int):
+def _draw_menu(screen: pygame.Surface, tick: int):
     screen.fill((255, 255, 255))
     # draw the menu area: a rectangle at the top of the screen
     pygame.draw.rect(screen, (0, 0, 0), (40, 40, 520, 120), 5)
