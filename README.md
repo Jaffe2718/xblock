@@ -1,46 +1,23 @@
-# Block Transform Game (Python Version)
+# Block Transform Game (GitHub Pages)
 
 ## Project Description
+This is a game which is rewritten from the python version.
 
 ### Project Structure
 
 ```
 .
-|   .gitignore          # git ignore file
-|   compile.cmd         # compile script
-|   LICENSE             # license file
-|   README.md           # readme file
-|   setup.cmd           # setup script
+|   .gitignore      // git ignore file
+|   index.html      // html file
+|   LICENSE         // license file: GPL-3.0
+|   README.md       // readme file
 |
-\---block_trans         # project root
-    |   game_ui.py      # game ui module
-    |   graph.py        # unidirectional graph module
-    |   main.py         # main program
-    |
-    \---assets          # static assets directory
-            xnftj.mp3   # background music
+\---js              // js files
+        main.js     // main js file
 ```
 
-### Project Dependencies
-| Dependency | Version | Description            |
-|:-----------|:--------|:-----------------------|
-| git        | -       | Version control system |
-| Anaconda   | -       | Python distribution    |
+## URL
 
-### How to setup
-run `setup.cmd` to setup the project, or run the following commands in the project root directory:
-```bash
-conda create -n xblock python=3.11
-conda activate xblock
-pip install pyinstaller
-pip install pygame
-```
-
-### How to compile
-run `compile.cmd` to compile the project, or run the following commands in the project root directory:
-```bash
-pyinstaller --upx-dir "path/to/upx" --add-data "path/to/assets;assets" -Fw "path/to/main.py" -i "path/to/your.ico"
-```
 
 ## How to play
 There are 3 modes in this game: `3x3`, `4x4` and `5x5`.
