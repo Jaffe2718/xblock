@@ -5,6 +5,9 @@
 ![Issues](https://img.shields.io/github/issues/Jaffe2718/xblock?style=flat-square)
 ![License](https://img.shields.io/github/license/Jaffe2718/xblock?style=flat-square)
 
+## Play Online
+[Jaffe2718|Block Transform](https://jaffe2718.github.io/xblock/)
+
 ## Project Description
 
 ### Project Structure
@@ -78,6 +81,3 @@ The goal of the game is to make all the numbers in order:
 16  17  18  19  20
 21  22  23  24  25
 ```
-
-## Play Online
-[Jaffe2718|Block Transform](https://jaffe2718.github.io/xblock/)
