@@ -17,7 +17,7 @@ This is a game which is rewritten from the python version.
 ```
 
 ## URL
-
+[Jaffe2718|Block Transform](https://jaffe2718.github.io/xblock/)
 
 ## How to play
 There are 3 modes in this game: `3x3`, `4x4` and `5x5`.
