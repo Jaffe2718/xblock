@@ -17,8 +17,11 @@ This is a game which is rewritten from the python version.
 |   LICENSE         // license file: GPL-3.0
 |   README.md       // readme file
 |
-\---js              // js files
-        main.js     // main js file
++---js              // JavaScript dir
+|       main.js     // main js file
+|
+\---res             // resource dir
+        xnftj.mp3   // bgm file
 ```
 
 ## URL
