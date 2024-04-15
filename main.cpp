@@ -35,11 +35,7 @@ int main([[maybe_unused]] int argc, char* argv[]) {
     while (window.isOpen()) {                                                            // main loop
         sf::Event event{};
         while (window.pollEvent(event)) {                                             // event loop
-            if (event.type == sf::Event::Closed) {
-                window.close();
-            } else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                xblock::handleEvent(ui_status, data, rule, clock, win_time, event);
-            }
+            xblock::handleEvent(ui_status, data, rule, clock, win_time, event);
         }
         xblock::ui(window, ui_status, data, rule, clock, win_time);
         window.display();
