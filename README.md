@@ -45,10 +45,11 @@
 |:-----------|:--------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | git        | -       | Version control system                                                                                                                                                                                                        |
 | MinGW      | 13.1.0  | Mingw-w64 GCC for Windows, [WinLibs MSVCRT 13.1.0 (64-bit)](https://github.com/brechtsanders/winlibs_mingw/releases/download/13.1.0-16.0.5-11.0.0-msvcrt-r5/winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5.7z) |
-| CMake      | \>=3.28 | Cross-platform build system                                                                                                                                                                                                    |
+| CMake      | \>=3.28 | Cross-platform build system                                                                                                                                                                                                   |
 | SFML       | 2.6.1   | Simple and Fast Multimedia Library, 64-bit version, [Download](https://www.sfml-dev.org/download/sfml/2.6.1/)                                                                                                                 |
 
 ### How to setup
+
 1. Install `git` & `CMake` & `MinGW` & `SFML`, add them to the system environment variables.
 2. Clone the project to your local directory.
 3. Edit the `CMakeLists.txt` file to specify the path of the SFML library.
@@ -72,7 +73,8 @@ mingw32-make -C build -j 8
 
 ### Reference
 
-- [FeasibilityAnalysis](doc/Feasibility_Analysis.md)
+- [Data Flow Diagram](doc/img/Data_Flow_Diagram.svg)
+- [Feasibility Analysis](doc/Feasibility_Analysis.md)
 - [Flowchart](doc/Flowchart.md)
 - [LICENSE](LICENSE)
 

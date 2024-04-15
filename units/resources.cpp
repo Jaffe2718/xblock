@@ -18,5 +18,7 @@ void xblock::load_resources(const std::string& exeDir) {
     icon.loadFromFile(exeDir + "/res/xblock.png");
     if (!music.openFromFile(exeDir + "/res/xnftj.mp3")) {
         throw std::runtime_error("Failed to load music.");
+    } else {
+        music.setLoop(true);
     }
 }
