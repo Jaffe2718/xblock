@@ -10,7 +10,7 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # add the SFML library
-set(SFML_DIR "libraries/SFML-2.6.1/lib/cmake/SFML")  # TODO: 用户克隆项目后需要按照自己的路径修改
+set(SFML_DIR "libraries/SFML-2.6.1/lib/cmake/SFML")  # TODO: edit this path to the SFMLConfig.cmake file
 set(BUILD_SHARED_LIBS TRUE)
 set(SFML_STATIC_LIBRARIES FALSE)
 find_package(SFML 2.6.1 COMPONENTS graphics window system audio REQUIRED)
