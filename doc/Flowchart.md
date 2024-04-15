@@ -46,6 +46,8 @@ flowchart TB
             H12{"Clicked in Grid?"}
             H13{"Clicked Help Button?"}
             H14{"Clicked Quit Button?"}
+            H15{"Clicked in Home Button?"}
+            
             H16{"Clicked 3x3/4x4/5x5 Button?"}
             H17{"Win?"}
             H18["Switch UI Status to Win"]
@@ -56,7 +58,8 @@ flowchart TB
             H13 -->|Yes| H19
             H11 -->|Yes| H9
             H16 -->|Yes| H8 --> H9
-            H5 -->|Yes| H11 -->|No| H12 -->|Yes| H10 --> H17 -->|Yes| H18
+            H15 -->|Yes| H7
+            H5 -->|Yes| H11 -->|No| H15 -->|No| H12 -->|Yes| H10 --> H17 -->|Yes| H18
         end
         
         subgraph TB UI["Render UI"]
