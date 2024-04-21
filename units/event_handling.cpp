@@ -140,33 +140,34 @@ void xblock::handleEvent(xblock::UI_Status &ui_status, std::vector<int> &data, s
                          sf::Clock &clock, sf::Time &winTime, sf::Event &event) {
     if (event.type == sf::Event::Closed) {
         ui_status = xblock::UI_Status::QUIT;
-    }
-    switch (ui_status) {
-        case UI_Status::HOME: {
-            _handleHome(ui_status, data, rule, clock, event.mouseButton.x, event.mouseButton.y);
-            break;
+    } else if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+        switch (ui_status) {
+            case UI_Status::HOME: {
+                _handleHome(ui_status, data, rule, clock, event.mouseButton.x, event.mouseButton.y);
+                break;
+            }
+            case UI_Status::THREE: {
+                _handle3x3(ui_status, data, rule, clock, winTime, event.mouseButton.x, event.mouseButton.y);
+                break;
+            }
+            case UI_Status::FOUR: {
+                _handle4x4(ui_status, data, rule, clock, winTime, event.mouseButton.x, event.mouseButton.y);
+                break;
+            }
+            case UI_Status::FIVE: {
+                _handle5x5(ui_status, data, rule, clock, winTime, event.mouseButton.x, event.mouseButton.y);
+                break;
+            }
+            case UI_Status::WIN: {
+                _handleWin(ui_status, winTime);
+                break;
+            }
+            case UI_Status::HELP: {
+                _handleHelp(ui_status);
+                break;
+            }
+            case QUIT:  // no event handling, wait for ui to quit
+                break;
         }
-        case UI_Status::THREE: {
-            _handle3x3(ui_status, data, rule, clock, winTime, event.mouseButton.x, event.mouseButton.y);
-            break;
-        }
-        case UI_Status::FOUR: {
-            _handle4x4(ui_status, data, rule, clock, winTime, event.mouseButton.x, event.mouseButton.y);
-            break;
-        }
-        case UI_Status::FIVE: {
-            _handle5x5(ui_status, data, rule, clock, winTime, event.mouseButton.x, event.mouseButton.y);
-            break;
-        }
-        case UI_Status::WIN: {
-            _handleWin(ui_status, winTime);
-            break;
-        }
-        case UI_Status::HELP: {
-            _handleHelp(ui_status);
-            break;
-        }
-        case QUIT:  // no event handling, wait for ui to quit
-            break;
     }
 }
