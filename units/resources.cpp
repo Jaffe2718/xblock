@@ -1,6 +1,9 @@
-//
-// Created by lfkex on 2024/4/14.
-//
+/**
+ * @File: units/resources.cpp
+ * @Author: Jaffe2718
+ * @Create: 2024/4/11
+ * @Description: To load the resources of the game.
+ * */
 
 #include "resources.h"
 

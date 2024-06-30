@@ -1,3 +1,10 @@
+/**
+ * @File: units/ui.cpp
+ * @Author: Jaffe2718
+ * @Create: 2024/4/11
+ * @Description: To draw the UI of the game by current status.
+ * */
+
 #include "ui.h"
 
 std::string xblock::_format_time(double time) {

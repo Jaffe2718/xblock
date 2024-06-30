@@ -1,6 +1,9 @@
-//
-// Created by lfkex on 2024/4/11.
-//
+/**
+ * @File: units/event_handling.cpp
+ * @Author: Jaffe2718
+ * @Create: 2024/4/11
+ * @Description: The event handling of the Block Transform game. To handle the mouse click event and update the game status.
+ * */
 
 #include "event_handling.h"
 

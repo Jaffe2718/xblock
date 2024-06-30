@@ -1,3 +1,10 @@
+/**
+ * @File: units/topology.cpp
+ * @Author: Jaffe2718
+ * @Create: 2024/4/11
+ * @Description: The game logic of the Block Transform game. The matrix data of the current game is stored in an array, and a directed graph is defined in a hash table to define the rules for block substitution. And encapsulated functions transform the game's matrix data based on rules and detect whether the player wins.
+ * */
+
 #include "topology.h"
 
 std::unordered_map<int, int> xblock::gen_rule(int n) {
